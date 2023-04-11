@@ -8,7 +8,7 @@ Airflow workflows are defined using Python code, which allows for a high degree 
 
 Airflow provides a rich set of features that make it easy to manage complex data pipelines. These include support for backfilling, task retries, dynamic task generation, parallel execution, and more. It also provides a web interface for monitoring and managing workflows, as well as an API that allows for programmatic access to Airflow's features.
 
-## File and GitHub Action
+## File Definitions
 
 Here's a list of the folders and files required to run the example DataOps CI/CD GitAction workflow script that I provided earlier:
 
@@ -18,3 +18,18 @@ Dockerfile: A Dockerfile that defines the environment and dependencies required 
 dags/: A folder containing the Apache Airflow DAG files that define the data pipeline to be executed.
 .github/workflows/: A folder containing the GitAction workflow YAML file that defines the CI/CD pipeline.
 All of these files and folders should be located in the root directory of your Git repository. The requirements.txt, tests/, and dags/ folders should be specific to the code you're trying to test and deploy. The Dockerfile should define the specific environment and dependencies required by your code to run in a Docker container. Finally, the .github/workflows/ folder should contain the GitAction workflow YAML file that defines the CI/CD pipeline and should reference the appropriate files and folders required for testing and deployment.
+
+## Folder and files stracture
+
+my_project/
+│   .github/
+│   │   workflows/
+│   │   │   main.yml
+│   Dockerfile
+│   requirements.txt
+│
+└───dags/
+│   │   my_dag.py
+│
+└───tests/
+│   │   test_my_dag.py
