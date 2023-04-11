@@ -1,4 +1,4 @@
-name: DataOps Workflow
+name: DataOps Example Workflow
 
 on:
   push:
